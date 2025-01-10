@@ -52,21 +52,177 @@
 				"url": "https://www.instagram.com/wib.web/"
 			  }
 			},
-			"datePublished": "2024-25-12",
+			"datePublished": "2025-09-01",
 			"image": "https://jacob-jeans-v2.vercel.app/IMG/JPG/Jacob-jeans.jpg"
 		  }
 	</script>
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
 	<link rel="stylesheet" href="CSS/styles.css" />
 	<title>Jacob Jeans</title>
 </head>
 
 <body>
-	<div class="backVid" id="video">
-		<video class="findVid" autoplay muted loop>
-			<source src="IMG/vid1.mp4" type="video/mp4">
-		</video>
+
+	<!-- OVERLAY -->
+
+	<div class="gx78_overlay" id="sliderModal_gx78">
+        <div class="gx78_modal_box">
+            <button class="gx78_close_btn" id="closeSlider_gx78">
+				<img src="IMG/SVG/close.svg" alt="">
+			</button>
+            <div class="gx78_slider_container">
+                <div class="gx78_slides">
+                    <!-- Using placeholder images. Replace src with your actual image paths -->
+                    <div class="gx78_slide">
+                        <img src="IMG/JPG/hoodie.jpg" alt="Showcase 1">
+                    </div>
+                    <div class="gx78_slide">
+                        <img src="IMG/JPG/hoodie2.jpg" alt="Showcase 2">
+                    </div>
+                    <div class="gx78_slide">
+                        <img src="IMG/JPG/hoodie3.jpg" alt="Showcase 3">
+                    </div>
+                    <div class="gx78_slide">
+                        <img src="IMG/JPG/hoodie4.jpg" alt="Showcase 4">
+                    </div>
+					<div class="gx78_slide">
+                        <img src="IMG/JPG/hoodie5.jpg" alt="Showcase 4">
+                    </div>
+                </div>
+                <button class="gx78_nav_btn gx78_prev" id="prevSlide_gx78">&#10094;</button>
+                <button class="gx78_nav_btn gx78_next" id="nextSlide_gx78">&#10095;</button>
+                <div class="gx78_dots" id="sliderDots_gx78"></div>
+            </div>
+        </div>
+    </div>
+
+	<div class="xj92_overlay" id="reviewModal_xj92">
+        <div class="rv45_modal_box">
+            <div class="rv45_header_wrap">
+                <h2>Customer Reviews</h2>
+                <button class="rv45_close_btn" id="closeReviews_xj92">&times;</button>
+            </div>
+            <div class="rv45_container">
+                <div class="rv45_review_item">
+                    <div class="rv45_review_top">
+                        <h3>John Doe</h3>
+                        <div class="rv45_stars_wrap">★★★★★</div>
+                    </div>
+                    <div class="rv45_date_text">Posted on January 5, 2025</div>
+                    <p>Amazing product! Exactly what I was looking for. The quality is outstanding and the customer service was excellent.</p>
+                </div>
+
+                <div class="rv45_review_item">
+                    <div class="rv45_review_top">
+                        <h3>Sarah Smith</h3>
+                        <div class="rv45_stars_wrap">★★★★☆</div>
+                    </div>
+                    <div class="rv45_date_text">Posted on January 3, 2025</div>
+                    <p>Very good overall. Shipping was fast and the product meets my expectations. Would recommend to others.</p>
+                </div>
+
+                <div class="rv45_review_item">
+                    <div class="rv45_review_top">
+                        <h3>Mike Johnson</h3>
+                        <div class="rv45_stars_wrap">★★★★★</div>
+                    </div>
+                    <div class="rv45_date_text">Posted on December 30, 2024</div>
+                    <p>Fantastic experience from start to finish. The attention to detail is impressive and the quality is top-notch.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<div class="overlayAbout" id="overlayAbout">
+		<div class="popup-content">
+			<div class="close-btn" id="closeAbout">&times;</div>
+			<h2>About Jacob Jeans</h2>
+
+			<p>Jacob jeans is a brand jeans created by N.Benjamin from London, England. Jeans was originally created in
+				France/Italy and denim comes from the name "de Nîmes", meaning "from Nîmes" (a city in France). Jacob
+				Davis a Jewish man, was the first to create modern jeans & collaborated with the famous Levi Strauss.
+				Today Jacob jeans, aims to create the new evolution of jeans, that the whole world may experience a
+				fresh touch.</p>
+
+			<p class="founder">Nathan Benjamin - CEO & Founder</p>
+
+			<div class="contact-section">
+				<p>Contact for -<a href="mailto:contactjacobjeans@gmail.com" class="business-enquiries">
+					Business Enquiries
+				</a></p>
+				
+			</div>
+		</div>
+	</div>
+
+	<div id="exitModal" class="modal">
+		<div class="modal-content">
+			<div>
+
+				<div>
+					<img class="close" src="IMG/SVG/close.svg" alt="Close">
+				</div>
+				<div>
+					<div>
+						<div>
+							<h2>Wait! Don't Go Just Yet!</h2>
+							<p>You're so close to staying in the loop! Drop your email below and be the first to hear
+								all about the exciting launch of Jacob Jeans. Trust us, you won't want to miss out!</p>
+							<label for="email_id">Sign up to our mail list</label>
+						</div>
+						<form id="form" class="subscribe-form">
+							<div class="input-group">
+								<div class="input-wrapper">
+									<svg class="email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+										fill="none" stroke="#01265d" stroke-width="2" stroke-linecap="round"
+										stroke-linejoin="round">
+										<path
+											d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+										<polyline points="22,6 12,13 2,6" />
+									</svg>
+									<input type="email" name="email_id" id="email_id" placeholder="Enter your email"
+										required autocomplete="on">
+								</div>
+							</div>
+							<input type="submit" id="button" class="submit-btn" value="Subscribe">
+						</form>
+					</div>
+
+				</div>
+				<div></div>
+
+
+			</div>
+
+		</div>
+	</div>
+
+	<div class="thank-you-container" id="thankContainer">
+		<div>
+			<div>
+				<img class="close-button" id="closeWindow" src="IMG/SVG/close.svg" alt="Close">
+			</div>
+			<div>
+				<h2>Thank You for Subscribing!</h2>
+				<p>You're all set! 🎉 Stay tuned for exciting updates from Jacob Jeans.</p>
+				<p>"A new evolution of jeans"™️</p>
+				<div>
+					<img src="IMG/PNG/JacobJeansWhite.png" alt="Jacob-jeans">
+				</div>
+				<!-- <p>"A new evolution of jeans"™</p> -->
+				<!-- <p>Visit us at <a href="https://www.jacobjeans.store" target="_blank">www.jacobjeans.store</a></p>
+				<p>Questions? <a href="mailto:nathabenjanin@jacobjeans.store">Contact Nathan Benjamin</a>, CEO & Founder</p> -->
+			</div>
+			<div></div>
+		</div>
+	</div>
+
+	<!-- OVERLAY -->
+
+	<div class="backVid">
+		<spline-viewer url="https://prod.spline.design/g8sJhnElBqUvcHam/scene.splinecode"></spline-viewer>
 	</div>
 
 	<div class="content">
@@ -74,33 +230,13 @@
 			<header id="headerContent">
 				<div class="headerContent">
 					<div>
-						<div>
-							<span>Home page</span>
+						<div id="aboutTitle">
+							<span>ABOUT</span>
 						</div>
-						<div>
-							<span>Our services</span>
-						</div>
-						<div>
-							<span>Possibilities</span>
-						</div>
-						<div class="Menu">
-							<span>Menu</span>
-						</div>
-
 					</div>
 					<div>
-						<div>
-							<a target="_blank" href="https://twitter.com">
-								<img src="IMG/twitter.svg" alt="twitter">
-							</a>
-						</div>
-						<div>
-							<a target="_blank" href="https://instagram.com">
-								<img src="IMG/instagram.svg" alt="instagram">
-							</a>
-						</div>
-						<div>
-							<span>Dashboard panel</span>
+						<div id="showReviews_xj92">
+							<span>REVIEWS</span>
 						</div>
 					</div>
 				</div>
@@ -118,11 +254,6 @@
 								<h2>JACOB JEANS</h2>
 							</div>
 						</div>
-						<div>
-							<div>
-								<img src="IMG/arrow.svg" alt="Arrow">
-							</div>
-						</div>
 					</div>
 				</section>
 
@@ -132,27 +263,18 @@
 							<div class="cajaNum1">
 								<div class="textArea">
 									<div>
-										<h2><span>Explain</span> natural phenomena and make predictions.</h2>
+										<h2><span>Design</span> excellence and create trends.</h2>
 									</div>
 								</div>
 								<div class="contentLine">
 									<div>
-										<p><span>Scientific knowledge</span> is constantly evolving as new
-											discoveries and technologies emerge, contributing to our understanding
-											of the natural world.</p>
+										<p><span>Fashion innovation </span>  is constantly evolving as new styles and sustainable practices emerge, contributing to our redefinition of modern denim.</p>
 									</div>
 									<div class="line">
 									</div>
 								</div>
-								<div class="textArea2">
-									<div>
-										<span>OBSERVATION SYSTEM</span>
-									</div>
-									<div class="findArrowUnderline">
-										<div>
-											<img src="IMG/arrowW.svg" alt="Arrow">
-										</div>
-									</div>
+								<div class="textArea2" id="showSlider_gx78">
+									<span>COLLECTION SHOWCASE --</span>
 								</div>
 							</div>
 						</div>
@@ -161,45 +283,23 @@
 						<div>
 							<div>
 								<div class="cajaNum2">
-									<div>
-										<h2>21.8M+</h2>
-									</div>
-									<div>
-										<h3>Analysis</h3>
-										<p><span>Based on observation</span> and existing
-											knowledge scientists propose a testable
-											explanation or hypothesis to answer.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div>
-							<div>
-								<div class="cajaNum3">
-
-									<div>
+									<form id="form2" class="subscribe-form2">
 										<div>
-											<div>
-												<div class="cicle"></div>
-											</div>
-											<div>
-												<div>
-													<img src="IMG/icon.png" alt="Icon">
-												</div>
-											</div>
+											<label for="email_id2">Sign up to our mail list</label>
 										</div>
-										<div>
-											<span>Research</span>
+										<div class="input-wrapper">
+											<svg class="email-icon" xmlns="http://www.w3.org/2000/svg"
+												viewBox="0 0 24 24" fill="none" stroke="#01265d" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round">
+												<path
+													d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+												<polyline points="22,6 12,13 2,6" />
+											</svg>
+											<input type="email" name="email_id2" id="email_id2"
+												placeholder="Enter your email" required autocomplete="on">
 										</div>
-									</div>
-
-									<div>
-										<h3>Communty</h3>
-										<p>New evidence and <span>discoveries</span> can lead to
-											the modification or rejection of existing
-											theories and the development</p>
-									</div>
-
+										<input type="submit" id="button2" class="submit-btn" value="Subscribe">
+									</form>
 								</div>
 							</div>
 						</div>
@@ -208,61 +308,41 @@
 
 				<div class="carousel mainContent">
 					<div class="carousel-inner">
-						<p> YOU'RE SO CLOSE TO STAYING IN THE LOOP! • DROP YOUR EMAIL BELOW AND BE THE FIRST TO HEAR ALL
+						<p> YOU'RE SO CLOSE TO STAYING IN THE LOOP! • DROP YOUR EMAIL AND BE THE FIRST TO HEAR ALL
 							ABOUT THE EXCITING LAUNCH OF JACOB JEANS • TRUST US, YOU WON'T WANT TO MISS OUT!
 						</p>
 					</div>
 				</div>
 
 				<footer class="footerContent">
-					<p>
-						SCIENCE IS A SYSTEMATIC AND <span>ORGANIZED APPROACH</span> TO UNDERSTANDING THE NATURAL WORLD
-						THROUGH
-						OBSERVATION EXPERIMENTATION AND THE FORMULATIONS OF THEORIES OR LAWS <span>BASED ON
-							EVIDENCE</span>
-					</p>
+					<p>¡COOMING SOON!</p>
+					<div>
+						<a href="https://www.instagram.com/sharer.php?u=https://jacob-jeans.vercel.app/"
+							target="_blank">
+							<img src="IMG/SVG/instagram.svg" alt="instagram">
+						</a>
+						<a href="https://www.facebook.com/sharer/sharer.php?u=https://jacob-jeans.vercel.app/"
+							target="_blank">
+							<img src="IMG/SVG/facebook.svg" alt="facebook">
+						</a>
+						<a href="https://wa.me/?text=https://jacob-jeans.vercel.app/" target="_blank">
+							<img src="IMG/SVG/whatsapp.svg" alt="whatsapp">
+						</a>
+						<a href="https://www.youtube.com/share?url=https://jacob-jeans.vercel.app/" target="_blank">
+							<img src="IMG/SVG/youtube.svg" alt="youtube">
+						</a>
+					</div>
 				</footer>
 
 			</main>
 		</div>
 	</div>
 
-	<div class="overlayMenu">
-		<div>
-			<video autoplay muted loop>
-				<source src="IMG/vid1.mp4" type="video/mp4">
-			</video>
-		</div>
-		<div>
-			<div class="menuClose">
-				<div class="Menu">
-					<img src="IMG/close.svg" alt="Burger">
-				</div>
-			</div>
-			<div>
-				<div>
-					<a href="">· Our services</a>
-				</div>
-				<div>
-					<a href="">· Possibilities</a>
-				</div>
-				<div>
-					<a href="https://twitter.com">· Twitter</a>
-				</div>
-				<div>
-					<a href="https://instagram.com">· Instagram</a>
-				</div>
-				<div>
-					<a href="">· Dashboard panel</a>
-				</div>
-				<div>
-					<a href="">· Formulario</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script src="JS/script.js">
-	</script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+	<script type="module" src="https://estatica-form-steps.vercel.app/JS/spline.js"></script>
+	<script src="JS/script.js"></script>
+	<script src="JS/emil.js"></script>
+	<script src="JS/zoom.js"></script>
 </body>
 
 </html>
