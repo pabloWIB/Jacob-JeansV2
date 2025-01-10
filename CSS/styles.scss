@@ -14,9 +14,8 @@ $gris: #2c2c2c;
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: auto;
   width: 100%;
-  position: absolute;
   top: 0;
   left: 0;
   background: $negro;
@@ -31,7 +30,7 @@ body {
   height: 100vh;
   width: 100%;
   background: $negro;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   display: flex;
@@ -45,21 +44,23 @@ body {
 // MENEJADOR DE MENU INTCONTENT
 
 .content {
-  position: absolute;
   z-index: 10;
-  height: 100%;
+  height: auto;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
   place-content: center;
   align-items: center;
+  background-color: peru;
   .intContent {
     margin: 0 auto;
     display: flex;
-    flex-flow: column wrap;
+    gap: 2rem;
+    flex-flow: column nowrap;
     justify-content: space-between;
-    height: 97%;
     width: 98.5%;
+    height: 100%;
+    background-color: orange;
   }
 }
 
@@ -177,6 +178,7 @@ body {
 
 .content {
   .intContent {
+    height: 100vh;
     main {
       section {
         border-radius: 20px;
